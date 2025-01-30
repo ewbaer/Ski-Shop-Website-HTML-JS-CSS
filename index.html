@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script src="script.js"></script>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="shop-name">
+            <a href="index.html">Baer Mountain Sports</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="content-wrapper">
+            <!-- Categories Box -->
+            <div class="categories">
+                <div class="categories-inner">
+                    <h1>Categories</h1>
+                    <ul>
+                        <li><a href="#" id="all">All</a></li>
+                        <li><a href="#" id="skis">Skis</a></li>
+                        <li><a href="#" id="ski-poles">Ski Poles</a></li>
+                        <li><a href="#" id="snowboards">Snowboards</a></li>
+                        <li><a href="#" id="goggles">Ski Goggles</a></li>
+                        <li><a href="#" id="ski-boots">Ski Boots</a></li>
+                        <li><a href="#" id="helmets">Helmets</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Product Container -->
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product skis">
+                    <img src="https://images.evo.com/imgp/700/254121/1084338/atomic-bent-100-skis-2025-.jpg">
+                    <h3>B&W Ski Blades</h3>
+                    <p>$399.99</p>
+                    <button onclick="addToCart('B&W Ski Blades', 399.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product snowboards">
+                    <img src="https://images.evo.com/imgp/700/253664/1162784/capita-defenders-of-awesome-snowboard-2025-.jpg">
+                    <h3>Capita Snowboard</h3>
+                    <p>$299.99</p>
+                    <button onclick="addToCart('Capita Snowboard', 299.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product goggles">
+                    <img src="https://images.evo.com/imgp/700/251983/1121214/oakley-line-miner-pro-m-low-bridge-fit-goggles-.jpg">
+                    <h3>Peach Ski Goggles</h3>
+                    <p>$59.99</p>
+                    <button onclick="addToCart('Peach Ski Goggles', 59.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product ski-poles">
+                    <img src="https://images.evo.com/imgp/700/202176/1107639/evo-way-up-adjustable-ski-poles-.jpg">
+                    <h3>Silver Ski Poles</h3>
+                    <p>$89.99</p>
+                    <button onclick="addToCart('Silver Ski Poles', 89.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product ski-boots">
+                    <img src="https://images.evo.com/imgp/700/238225/1018255/salomon-s-pro-supra-boa-95-ski-boots-women-s-.jpg">
+                    <h3>Salomon Ski Boots</h3>
+                    <p>$119.99</p>
+                    <button onclick="addToCart('Salomon Ski Boots', 119.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product helmets">
+                    <img src="https://images.evo.com/imgp/700/200999/843660/oakley-mod-1-pro-mips-helmet-.jpg">
+                    <h3>Black Helmet</h3>
+                    <p>$39.99</p>
+                    <button onclick="addToCart('Black Helmet', 39.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product skis">
+                    <img src="https://images.evo.com/imgp/700/252654/1085832/salomon-depart-1-0-skis-2025-.jpg">
+                    <h3>Surf Ski Blades</h3>
+                    <p>$899.99</p>
+                    <button onclick="addToCart('Surf Ski Blades', 899.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product snowboards">
+                    <img src="https://images.evo.com/imgp/700/241387/1016225/salomon-bliss-x-snowboard-women-s-2025-.jpg">
+                    <h3>Cream Snowboard</h3>
+                    <p>$549.99</p>
+                    <button onclick="addToCart('Cream Snowboard', 549.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product ski-poles">
+                    <img src="https://images.evo.com/imgp/700/241191/1119013/black-crows-meta-ski-poles-2025-.jpg">
+                    <h3>Green Ski Poles</h3>
+                    <p>$99.99</p>
+                    <button onclick="addToCart('Green Ski Poles', 99.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product goggles">
+                    <img src="https://images.evo.com/imgp/700/251980/1121407/oakley-line-miner-pro-l-goggles-.jpg">
+                    <h3>Blue Ski Goggles</h3>
+                    <p>$119.99</p>
+                    <button onclick="addToCart('Blue Ski Goggles', 119.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="product ski-boots">
+                    <img src="https://images.evo.com/imgp/700/227411/1075086/clone.jpg">
+                    <h3>Rossi Ski Boots</h3>
+                    <p>$129.99</p>
+                    <button onclick="addToCart('Rossi Ski Boots', 129.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product helmets">
+                    <img src="https://images.evo.com/imgp/700/256453/1162694/sweet-protection-trooper-2vi-mips-helmet-.jpg">
+                    <h3>Princess Helmet</h3>
+                    <p>$69.99</p>
+                    <button onclick="addToCart('Princess Helmet', 69.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 13 -->
+                <div class="product skis">
+                    <img src="https://images.evo.com/imgp/700/253569/1103850/clone.jpg">
+                    <h3>Neon Ski Blades</h3>
+                    <p>$199.99</p>
+                    <button onclick="addToCart('Neon Ski Blades', 199.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 14 -->
+                <div class="product snowboards">
+                    <img src="https://images.evo.com/imgp/700/252466/1151387/jones-mountain-twin-snowboard-2025-.jpg">
+                    <h3>Jones Snowboard</h3>
+                    <p>$299.99</p>
+                    <button onclick="addToCart('Jones Snowboard', 299.99)">Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Baer Mountain Sports. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

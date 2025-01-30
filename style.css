@@ -1,0 +1,590 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?cs=srgb&dl=pexels-stywo-1054218.jpg&fm=jpg'); 
+    background-size: cover; /* Ensure the image covers the whole page */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-size: 125%;
+}
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .shop-name a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+    padding-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Categories Box */
+.categories {
+    width: 20%;
+    padding: 15px;
+    margin-right: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categories-inner {
+    background-color: #eaeaea; /* Apply background to this inner container */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.categories h2 {
+    font-size: 1.5rem; /* Make category title larger */
+}
+
+.categories ul {
+    list-style-type: none;
+}
+
+.categories ul li {
+    margin: 15px 0;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px; /* Increase font size for category links */
+}
+
+/* Highlighting the "All" option */
+.categories ul li:first-child a {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10px;
+    margin: 20px;
+}
+
+/* Content Wrapper for consistent layout */
+.content-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+/* Product Container */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 products per row */
+    gap: 15px; /* Adjust space between products */
+    width: 75%;
+}
+
+.product {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 1rem; /* Reduced font size */
+    color: #333;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Hover Effect for Product */
+.product:hover {
+    transform: translateY(-10px); /* Moves the item upwards */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Basic styling for the cart page */
+
+main {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Header */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+#total-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#total-price br {
+    margin: 5px 0;
+}
+
+
+/* Center the "Your Cart" heading */
+main h1 {
+    right: 10px;
+    font-size: 2rem;
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+/* Cart section styling */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Optional: You can add more styling to make the cart more visually appealing */
+.cart-items li {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Adjust the width as needed */
+}
+
+.cart-items li button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    left: 1300px; /* Move the button farther right */
+}
+
+.cart-items li button:hover {
+    background-color: #d32f2f;
+}
+
+/* Cart Summary Section */
+.cart-summary {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#total-price {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.clear-cart {
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.clear-cart:hover {
+    background-color: #1976d2;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    .cart-items li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-items li button {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+
+/* Cart Page Specific Styles */
+.cart-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Contact Page Styles */
+.contact-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-container form input,
+.contact-container form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-container form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-container form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.contact-container form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Categories box, product box, and layout adjustments for all pages */
+.content-wrapper {
+    display: flex;
+}
+
+.categories {
+    width: 20%;
+    background-color: #eaeaea;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 30px;
+}
+
+.categories ul {
+    list-style-type: none;
+}
+
+.categories ul li {
+    margin: 10px 0;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.categories ul li:first-child a {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* General Styling for Links and Buttons */
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.categories a.active {
+    font-weight: bold;
+    color: #007bff; /* Highlight color */
+}
+
+/* Make the product fade in/out */
+.product {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.product.hidden {
+    opacity: 0;
+}
+
+
+/*Checkout stuff*/
+
+
+/* Checkout Button */
+.cart-summary {
+    margin-top: 30px;
+    text-align: left; /* Aligning to the left */
+    width: 30%; /* You can adjust the width if necessary */
+    display: flex;
+    flex-direction: column; /* Ensure elements stack vertically */
+    align-items: flex-start; /* Align items to the left */
+}
+
+#checkout-summary h2 {
+    position: absolute;
+    left: -82px;
+    top: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+#checkout-summary {
+    position: relative;
+    font-size: 18px;
+    padding: 2px;
+    border-radius: 1px;
+    width: 300px;
+    top: 70px;
+    left: -60px;
+    
+    font-family: Arial, sans-serif;
+}
+
+#total-price {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.checkout-btn {
+    background-color: #4CAF50; /* Green color for the checkout button */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 105%; /* Full width */
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Slight gap between total price and button */
+}
+
+.checkout-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .checkout-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+/* Reset for checkout page */
+.checkout-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+.checkout-page body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 0 10px;
+}
+
+/* Header for checkout page */
+.checkout-page header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkout-page header .shop-name a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+    padding-left: 20px;
+}
+
+.checkout-page nav ul {
+    list-style-type: none;
+    display: flex;
+    padding-right: 20px;
+}
+
+.checkout-page nav ul li {
+    margin: 0 15px;
+}
+
+.checkout-page nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main Checkout Section */
+.checkout-page main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-page h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Checkout Form */
+.checkout-page .checkout-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-page .form-group {
+    margin-bottom: 15px;
+}
+
+.checkout-page label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.checkout-page input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.checkout-page button.submit-btn {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.checkout-page button.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+.checkout-page footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
